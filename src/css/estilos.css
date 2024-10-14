@@ -1,0 +1,168 @@
+body {
+    font-family: "Poppins", sans-serif;  /* A fonte do texto */
+    background-image: url("../imagens/fundo.jpg");  /*Pra adicionar imagem ao fundo */
+    background-size: cover; /* Ajusta a imagem na tela pra ela não reptir*/
+    background-position: center;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    backdrop-filter: blur(8px);
+}
+
+main {
+    display: flex; /*Tornar o posicionamento e alinhamento dos elementos pai e filhos dessa classe*/
+    justify-content: center; /*alinha no centro da pagina a imagem*/
+    align-items: center; /*centraiza verticalmente o elemento*/
+
+    min-height: 100vh;  /*altura minima da janela navegador */
+}
+
+.mangas {
+    display: flex;
+    gap: 30px;
+    padding: 30px 0;
+
+}
+
+.cartao-manga {
+    display: none; /*Some todas as imagens dessa classe*/
+    max-width: 360px; /*ajusta o tamanho cartao da imagem dessa classe*/
+    border-radius: 5px;
+    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; /*dar a sobra na classe*/
+}
+
+.cartao-manga.aberto {
+    display: block; /*Mostrar a imagens dessa classe*/
+}
+
+.cartao-manga img {
+    width: 100%; /*ajusta/restringir largura imagens dessa classe*/
+    height: 100%; /*usta/restringir altura imagens dessa classe*/
+    margin-top: 10px; /*ajusta/restringir a margem imagens dessa classe*/
+    
+}
+
+.sombra-amarela {
+    filter: drop-shadow(10px 7px 20px yellow);
+}
+
+.sombra-preto {
+    filter: drop-shadow(10px 7px 20px black );
+}
+
+.sombra-azul {
+    filter: drop-shadow(10px 7px 20px blue);
+}
+
+.sombra-laranja {
+    filter: drop-shadow(10px 7px 20px orange);
+}
+
+
+
+.cartao-manga .cartao-topo {
+    padding: 30px 40px 0; /*ajustes do espaçamento de cima dos lados e de baixo imagens dessa classe*/
+}
+
+.cartao-manga .nome {
+    margin-bottom: 5px; /*espaçamento da margem em baixo imagens dessa classe*/
+}
+
+.cartao-manga .tipo {
+    background-color: #ffffff; 
+    font-size: 12px;/*tamanho da fonte*/
+    opacity: 0.7; /*opacidade leve esmaicer*/
+    border-radius: 10px; /*aredondada na borda*/
+    padding: 2px 10px; /* espaçamento na borda*/
+}
+
+.cartao-manga .detalhes {
+    color: #ffffff;
+    display: flex; /* jogar um elemtendo pra cada lado*/
+    justify-content: space-between; /* ele da espaço entre os elemtendo pra cada lado*/
+    align-items: center; /* alinha os  elemtendo no centro*/
+}
+
+.cartao-manga .cartao-informacoes {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 30px 50px;
+    margin-top: -70px; /* faz a margim ser ajustada tanto pra cima ou pra baixo*/
+    border-bottom-left-radius: 8px; /* arredomento em baixo a esquerda*/
+    border-bottom-right-radius: 8px; /* arredomento em cima a direita*/
+}
+
+.cartao-manga .cartao-informacoes h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #6b727a;
+}
+
+.cartao-manga .cartao-informacoes .descricao {
+    padding: 0 10px;
+    font-size: 15px;
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+.tipo-energia {
+    background-color: #209fd8;
+}
+
+.tipo-cosmos {
+    background-color: #737874;
+}
+
+.tipo-espiritual {
+    background-color: #FFD700;
+}
+
+.tipo-chakra {
+    background-color: #00a377;
+}
+
+.listagem {
+    max-width: 200px;
+}
+
+.listagem .manga img {
+    width: 25%;
+}
+
+.listagem .manga {
+    background-color: #6b727a;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  0 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    min-height: 70px;
+
+    transition: 0.15 ease-in-out;
+}
+
+.listagem .manga:hover {
+    transform: scale(1.05);
+}
+
+.listagem .manga span {
+    padding-right: 20px;
+}
+
+.listagem .manga.ativo {
+    background-color: #fa6668;
+}
