@@ -1,7 +1,7 @@
 body {
-    font-family: "Poppins", sans-serif;  /* A fonte do texto */
-    background-image: url("../imagens/fundo.jpg");  /*Pra adicionar imagem ao fundo */
-    background-size: cover; /* Ajusta a imagem na tela pra ela não reptir*/
+    font-family: "Poppins", sans-serif; 
+    background-image: url("../imagens/fundo.jpg");
+    background-size: cover; 
     background-position: center;
 }
 
@@ -17,11 +17,11 @@ body::before{
 }
 
 main {
-    display: flex; /*Tornar o posicionamento e alinhamento dos elementos pai e filhos dessa classe*/
-    justify-content: center; /*alinha no centro da pagina a imagem*/
-    align-items: center; /*centraiza verticalmente o elemento*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    min-height: 100vh;  /*altura minima da janela navegador */
+    min-height: 100vh;
 }
 
 .mangas {
@@ -32,21 +32,21 @@ main {
 }
 
 .cartao-manga {
-    display: none; /*Some todas as imagens dessa classe*/
-    max-width: 360px; /*ajusta o tamanho cartao da imagem dessa classe*/
+    display: none;
+    max-width: 360px;
     border-radius: 5px;
     
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; /*dar a sobra na classe*/
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .cartao-manga.aberto {
-    display: block; /*Mostrar a imagens dessa classe*/
+    display: block; 
 }
 
 .cartao-manga img {
-    width: 100%; /*ajusta/restringir largura imagens dessa classe*/
-    height: 100%; /*usta/restringir altura imagens dessa classe*/
-    margin-top: 10px; /*ajusta/restringir a margem imagens dessa classe*/
+    width: 100%; 
+    height: 100%; 
+    margin-top: 10px; 
     
 }
 
@@ -63,32 +63,32 @@ main {
 }
 
 .sombra-laranja {
-    filter: drop-shadow(10px 7px 20px orange);
+    filter: drop-shadow(10px 7px 20px purple);
 }
 
 
 
 .cartao-manga .cartao-topo {
-    padding: 30px 40px 0; /*ajustes do espaçamento de cima dos lados e de baixo imagens dessa classe*/
+    padding: 30px 40px 0; 
 }
 
 .cartao-manga .nome {
-    margin-bottom: 5px; /*espaçamento da margem em baixo imagens dessa classe*/
+    margin-bottom: 5px; 
 }
 
 .cartao-manga .tipo {
     background-color: #ffffff; 
-    font-size: 12px;/*tamanho da fonte*/
-    opacity: 0.7; /*opacidade leve esmaicer*/
-    border-radius: 10px; /*aredondada na borda*/
-    padding: 2px 10px; /* espaçamento na borda*/
+    font-size: 12px;
+    opacity: 0.7; 
+    border-radius: 10px; 
+    padding: 2px 10px; 
 }
 
 .cartao-manga .detalhes {
     color: #ffffff;
-    display: flex; /* jogar um elemtendo pra cada lado*/
-    justify-content: space-between; /* ele da espaço entre os elemtendo pra cada lado*/
-    align-items: center; /* alinha os  elemtendo no centro*/
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
 }
 
 .cartao-manga .cartao-informacoes {
@@ -96,9 +96,9 @@ main {
     display: flex;
     justify-content: space-between;
     padding: 80px 30px 50px;
-    margin-top: -70px; /* faz a margim ser ajustada tanto pra cima ou pra baixo*/
-    border-bottom-left-radius: 8px; /* arredomento em baixo a esquerda*/
-    border-bottom-right-radius: 8px; /* arredomento em cima a direita*/
+    margin-top: -70px; 
+    border-bottom-left-radius: 8px; 
+    border-bottom-right-radius: 8px; 
 }
 
 .cartao-manga .cartao-informacoes h3 {
