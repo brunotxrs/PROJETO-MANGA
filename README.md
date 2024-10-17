@@ -1,4 +1,4 @@
-<h1 align="center">Catálogo de Personagens principais de Mangá </h1>
+<h1 align="center">Catálogo de Personagens Principais de Mangá </h1>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/e6e26e25-e0d7-4f6e-8dfa-d24c150ecc1c" width="100%"/>
