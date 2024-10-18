@@ -16,7 +16,7 @@
 
 - Esse projeto, consiste no desenvolvimento de uma tela estatica de catálogo de personagens principais de mangá.
 
-- Acesse o projeto finalizado, [online](https://brunotxrs.github.io/PROJETO-MANGA/)
+- Acesse o projeto finalizado, [online](https://brunotxrs.github.io/projeto-manga/)
 
 ---
 
